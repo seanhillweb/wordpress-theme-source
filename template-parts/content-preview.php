@@ -7,7 +7,7 @@
 		<?php
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail('post-thumbnail-preview');
-			} 
+			}
 			else {
 				echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/thumbnail-default.jpg" />';
 			}
