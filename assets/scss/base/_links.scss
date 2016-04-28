@@ -1,0 +1,28 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Base - Links
+------------------------------------------------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: $brand-secondary;
+	@include transition(all, 0.3s);
+
+	// &:visited {
+	// 	color: $brand-primary-accent;
+	// }
+	&:hover,
+	&:focus,
+	&:active {
+		color: $brand-primary;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

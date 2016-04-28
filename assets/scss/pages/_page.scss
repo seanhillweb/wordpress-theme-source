@@ -1,0 +1,77 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Pages - Page
+------------------------------------------------------------------------------*/
+
+.page-article{
+	background-color: transparent;
+	overflow: hidden;
+	margin-bottom: 1.75rem;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	@include breakpoint(alpha) {
+		margin-bottom: 3.5rem;
+		background-color: $base-white;
+		-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+		@include border-radius(2px);
+	}
+}
+
+.page-image{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.page-entry{
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
+
+	@include breakpoint(alpha) {
+		margin-top: 3.5rem;
+		margin-bottom: 3.5rem;
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+}
+
+.page-title{
+	margin-top: 1.75rem;
+	padding-bottom: 1rem;
+	border-bottom: 3px solid $greyscale-2;
+	
+	@include breakpoint(alpha) {
+		margin-top: 3.5rem;
+	}
+}
+
+.page-content{
+
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-top: 1.75rem;
+		margin-bottom: 1.75rem;
+
+		@include breakpoint(alpha) {
+			width: auto;
+			max-width: 100%;
+			margin-top: 3.5rem;
+			margin-bottom: 3.5rem;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Components - Alignment
+------------------------------------------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.75rem;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.75rem;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

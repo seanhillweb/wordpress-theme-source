@@ -1,0 +1,77 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Components - Calendar
+------------------------------------------------------------------------------*/
+
+.calendar_wrap{
+
+	table{
+		width: 100%;
+		font-size: 0.875rem;
+		border-collapse: collapse;
+		
+		caption{
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			background-color: $brand-tertiary;
+			color: $base-white;
+			text-transform: uppercase;
+		}
+
+		thead{
+			background-color: $brand-tertiary-accent;
+
+			th{
+				border: 1px solid $brand-tertiary;
+				font-weight: 500;
+				color: $greyscale-4;
+			}
+		}
+
+		tbody{
+			text-align: center;
+			color: $base-black;
+
+			.pad{
+				background-color: $greyscale-1;
+			}
+
+			td{
+				border: 1px solid $greyscale-2;
+			}
+
+			a{
+				text-decoration: none;
+				color: $brand-secondary;
+				@include transition(all, 0.3s);
+
+				&:hover{
+					color: $brand-primary;
+				}
+			}
+		}
+
+		tfoot{
+
+			#prev{
+				text-align: left;
+			}
+
+			#next{
+				text-align: right;
+			}
+
+			a{
+				text-decoration: none;
+				color: $brand-secondary;
+				@include transition(all, 0.3s);
+
+				&:hover{
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+}

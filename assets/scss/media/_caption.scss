@@ -1,0 +1,37 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Media - Caption
+------------------------------------------------------------------------------*/
+
+.wp-caption {
+	margin-top: 1.75rem;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 1.75rem;
+
+	@include breakpoint(beta) {
+		margin-top: 3.5rem;
+		margin-bottom: 3.5rem;
+	}
+
+	img{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0;
+
+		&[class*="wp-image-"] {
+			@extend img;
+		}
+	}
+}
+
+.wp-caption-text {
+	margin-top: 0.875rem;
+	text-align: left;
+	font-style: italic;
+	font-size: 0.875rem;
+	color: $greyscale-4;
+}

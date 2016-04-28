@@ -1,0 +1,170 @@
+@import "../utils/mixins";
+
+/*------------------------------------------------------------------------------
+# Layout - Grid
+------------------------------------------------------------------------------*/
+
+// Defaults to 100% width for screen sizes smaller than 600px
+.container{
+	width: 94%;
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.row:before,
+.row:after{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.clearfix{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.col{
+	float: left;
+	width: 100%;
+	min-height: 1px;
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+
+	@include breakpoint(alpha) {
+		padding-left: 1.125rem;
+		padding-right: 1.125rem;
+	}
+
+	@include breakpoint(beta) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+.flow-opposite{
+
+	@include breakpoint(beta) {
+		float: right;
+	}
+}
+
+// Small Columns - Screen sizes between 600px and 899px
+@include breakpoint(alpha) {
+	.s1{
+		width: 8.333%;
+	}
+	.s2{
+		width: 16.667%;
+	}
+	.s3{
+		width: 25%;
+	}
+	.s4{
+		width: 33.333%;
+	}
+	.s5{
+		width: 41.667%;
+	}
+	.s6{
+		width: 50%;
+	}
+	.s7{
+		width: 58.333%;
+	}
+	.s8{
+		width: 66.667%;
+	}
+	.s9{
+		width: 75%;
+	}
+	.s10{
+		width: 83.333%;
+	}
+	.s11{
+		width: 91.667%;
+	}
+	.s12{
+		width: 100%;
+	}
+}
+
+// Medium Columns - Screen sizes between 900px and 1199px
+@include breakpoint(beta) {
+	.m1{
+		width: 8.333%;
+	}
+	.m2{
+		width: 16.667%;
+	}
+	.m3{
+		width: 25%;
+	}
+	.m4{
+		width: 33.333%;
+	}
+	.m5{
+		width: 41.667%;
+	}
+	.m6{
+		width: 50%;
+	}
+	.m7{
+		width: 58.333%;
+	}
+	.m8{
+		width: 66.667%;
+	}
+	.m9{
+		width: 75%;
+	}
+	.m10{
+		width: 83.333%;
+	}
+	.m11{
+		width: 91.667%;
+	}
+	.m12{
+		width: 100%;
+	}
+}
+
+// Large Columns - Screen sizes after 1200px
+@include breakpoint(gamma) {
+	.l1{
+		width: 8.333%;
+	}
+	.l2{
+		width: 16.667%;
+	}
+	.l3{
+		width: 25%;
+	}
+	.l4{
+		width: 33.333%;
+	}
+	.l5{
+		width: 41.667%;
+	}
+	.l6{
+		width: 50%;
+	}
+	.l7{
+		width: 58.333%;
+	}
+	.l8{
+		width: 66.667%;
+	}
+	.l9{
+		width: 75%;
+	}
+	.l10{
+		width: 83.333%;
+	}
+	.l11{
+		width: 91.667%;
+	}
+	.l12{
+		width: 100%;
+	}
+}

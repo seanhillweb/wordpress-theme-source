@@ -1,0 +1,45 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Components - Widgets
+------------------------------------------------------------------------------*/
+
+[class*='widget-widget_'] {
+
+	ul{
+		list-style: none;
+		margin: 0;
+
+		li{
+			position: relative;
+			margin-bottom: 1rem;
+			font-size: 0.875rem;
+			line-height: 1.5rem;
+			color: $greyscale-5;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	select{
+		width: 100%;
+		height: 3rem;
+	}
+}
+
+.widget-title{
+	margin-top: 0;
+	margin-bottom: 1.75rem;
+	padding: 0 0 1rem;
+	border-bottom: 3px solid $greyscale-2;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.post-date{
+	display: block;
+}

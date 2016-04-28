@@ -1,0 +1,26 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Components - Tagcloud
+------------------------------------------------------------------------------*/
+
+.tagcloud{
+
+	a{
+		display: inline-block;
+		padding: 0.5rem;
+		background-color: $greyscale-3;
+		font-size: 0.75rem;
+		text-decoration: none;
+		line-height: 1em;
+		color: $base-white;
+		@include border-radius (2px);
+		@include transition (all, 0.3s);
+
+		&:hover{
+			background-color: $brand-primary;
+			color: $base-white
+		}
+	}
+}

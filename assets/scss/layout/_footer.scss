@@ -1,0 +1,56 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Layout - Footer
+------------------------------------------------------------------------------*/
+
+.site-footer{
+	width: 100%;
+	height: auto;
+	padding-top: 3.5rem;
+	padding-bottom: 3.5rem;
+	background-color: $base-black;
+
+	@include breakpoint(beta) {
+		padding-top: 4.5rem;
+		padding-bottom: 4.5rem;
+	}
+}
+
+.social-media{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+
+	li{
+		display: inline-block;
+		margin-right: 1rem;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			font-size: 1.5rem;
+			color: $greyscale-5;
+			@include transition(all, 0.3s);
+
+			&:hover{
+				color: $base-white;
+			}
+		}
+	}
+}
+
+.copyright{
+	width: 100%;
+	text-align: center;
+	margin-top: 1.75rem;
+
+	p{
+		font-size: 0.875rem;
+		color: $greyscale-5;
+		margin-bottom: 0;
+	}
+}

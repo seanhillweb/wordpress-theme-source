@@ -1,0 +1,59 @@
+/*!
+Theme Name: Source
+Theme URI: http://www.seanhillweb.com/
+Author: Sean Hill
+Author URI: http://www.seanhillweb.com/
+Description: A reset theme.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "utils/mixins";
+@import "utils/variables";
+
+/*------------------------------------------------------------------------------
+# Base - Reset, Normalize, Typography and Global Links
+------------------------------------------------------------------------------*/
+@import "base/reset";
+@import "base/normalize";
+@import "base/typography";
+@import "base/links";
+
+/*------------------------------------------------------------------------------
+# Layout - Grid, Header, Footer and Sidebar
+------------------------------------------------------------------------------*/
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/content";
+@import "layout/sidebar";
+
+/*------------------------------------------------------------------------------
+# Components - Accessibility, Alignment, Buttons, Calendar, Comments, Content,
+Forms, Pagination, Tagcloud and Widgets
+------------------------------------------------------------------------------*/
+@import "components/accessibility";
+@import "components/alignment";
+@import "components/buttons";
+@import "components/calendar";
+@import "components/comments";
+@import "components/forms";
+@import "components/pagination";
+@import "components/tagcloud";
+@import "components/widgets";
+
+/*------------------------------------------------------------------------------
+# Media - Caption, Embded, and Gallery
+------------------------------------------------------------------------------*/
+@import "media/caption";
+@import "media/embed";
+@import "media/gallery";
+
+/*------------------------------------------------------------------------------
+# Pages - Archive, Author, Page and Search
+------------------------------------------------------------------------------*/
+@import "pages/archive";
+@import "pages/author";
+@import "pages/page";
+@import "pages/search";

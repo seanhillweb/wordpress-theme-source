@@ -1,0 +1,27 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Pages - Archive
+------------------------------------------------------------------------------*/
+
+.archive-header{
+	margin-bottom: 3.5rem;
+	padding: 1.75rem;
+	background-color: $brand-tertiary;
+	@include border-radius(2px);
+
+	@include breakpoint(alpha) {
+		padding: 3.5rem;
+	}
+}
+
+.archive-title{
+	margin-top: 0;
+	color: $base-white;
+
+	span{
+		display: block;
+		color: $brand-primary;
+	}
+}

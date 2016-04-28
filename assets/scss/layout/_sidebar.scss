@@ -1,0 +1,30 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+/*------------------------------------------------------------------------------
+# Layout - Sidebar
+------------------------------------------------------------------------------*/
+
+.site-sidebar{
+	margin-top: 3.5rem;
+
+	@include breakpoint(beta) {
+		margin-top: 0;
+	}
+
+	[class*='widget-widget_'] {
+		margin-bottom: 1.75rem;
+
+		@include breakpoint(alpha) {
+			padding: 1.75rem;
+			background-color: $base-white;
+			-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

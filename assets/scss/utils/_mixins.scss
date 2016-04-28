@@ -1,0 +1,82 @@
+// =============================================================================
+// Breakpoints
+// =============================================================================
+
+// (i.e. "@include breakpoint(gamma)")
+@mixin breakpoint($point) {
+	@if $point == gamma{
+		@media all and (min-width: 1200px) { 
+			@content; 
+		}
+	}
+	@else if $point == beta{
+		@media all and (min-width: 900px) { 
+			@content; 
+		}
+	}
+	@else if $point == alpha{
+		@media all and (min-width: 600px) { 
+			@content; 
+		}
+	}
+}
+
+// =============================================================================
+// Border Radius
+// =============================================================================
+
+// (i.e. "@include border-radius (4px);")
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin border-top-left-radius($top-left-radius) {
+	-webkit-border-top-left-radius: $top-left-radius;
+	-moz-border-top-left-radius: $top-left-radius;
+	border-top-left-radius: $top-left-radius;
+}
+
+@mixin border-top-right-radius($top-right-radius) {
+	-webkit-border-top-right-radius: $top-right-radius;
+	-moz-border-top-right-radius: $top-right-radius;
+	border-top-right-radius: $top-right-radius;
+}
+
+@mixin border-bottom-right-radius($bottom-right-radius) {
+	-webkit-border-bottom-right-radius: $bottom-right-radius;
+	-moz-border-bottom-right-radius: $bottom-right-radius;
+	border-bottom-right-radius: $bottom-right-radius;
+}
+
+@mixin border-bottom-left-radius($bottom-left-radius) {
+	-webkit-border-bottom-left-radius: $bottom-left-radius;
+	-moz-border-bottom-left-radius: $bottom-left-radius;
+	border-bottom-left-radius: $bottom-left-radius;
+}
+
+// =============================================================================
+// Animations
+// =============================================================================
+
+// Animation Transition (i.e. "@include transition (all, 0.2s);")
+@mixin transition($transition-property, $transition-time) {
+	-webkit-transition: $transition-property $transition-time;
+	-moz-transition: $transition-property $transition-time;
+	transition: $transition-property $transition-time;
+}
+
+// Animation Delay (i.e. "@include animation-delay (0.4s);")
+@mixin animation-delay($delay-time) {
+	-webkit-animation-delay: $delay-time;
+	-moz-animation-delay: $delay-time;
+	animation-delay: $delay-time;
+}
+
+// Animation Hack - Use this to make the computer render animations better.
+@mixin transform-hack() {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
