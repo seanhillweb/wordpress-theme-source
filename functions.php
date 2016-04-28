@@ -190,9 +190,9 @@ function register_theme_support() {
 	set_post_thumbnail_size(125, 125, true);
 
 	// Additional Thumbnail Sizes
-	add_image_size( 'post-preview', 760, 428, true );
-	add_image_size( 'post-image', 1280, 720, true );
-	add_image_size( 'post-banner', 1920, 1080, true );
+	add_image_size( 'post-thumbnail-preview', 760, 428, true );
+	add_image_size( 'post-thumbnail-feature', 1280, 720, true );
+	add_image_size( 'post-thumbnail-banner', 1920, 1080, true );
 
 	// Post Formats
 	add_theme_support( 'post-formats', array(

@@ -6,7 +6,7 @@
 
 		<?php
 			if ( has_post_thumbnail() ) {
-				the_post_thumbnail('post-preview');
+				the_post_thumbnail('post-thumbnail-preview');
 			} 
 			else {
 				echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/thumbnail-default.jpg" />';
@@ -18,7 +18,7 @@
 	<div class="post-entry">
 
 		<header class="post-header">
-			
+
 			<div class="post-meta">
 
 				<div class="post-author-image">

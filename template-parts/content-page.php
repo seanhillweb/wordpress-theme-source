@@ -4,8 +4,8 @@
 
 		<?php
 			if ( has_post_thumbnail() ) {
-				the_post_thumbnail('post-preview');
-			} 
+				the_post_thumbnail('post-thumbnail-feature');
+			}
 			else {
 				echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/thumbnail-default.jpg" />';
 			}
@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="page-entry">
-		
+
 		<h1 class="page-title"><?php the_title(); ?></h1>
 
 		<div class="page-content"><?php the_content(); ?></div>
