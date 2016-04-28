@@ -5,18 +5,18 @@
 // (i.e. "@include breakpoint(gamma)")
 @mixin breakpoint($point) {
 	@if $point == gamma{
-		@media all and (min-width: 1200px) { 
-			@content; 
+		@media all and (min-width: 1200px) {
+			@content;
 		}
 	}
 	@else if $point == beta{
-		@media all and (min-width: 900px) { 
-			@content; 
+		@media all and (min-width: 900px) {
+			@content;
 		}
 	}
 	@else if $point == alpha{
-		@media all and (min-width: 600px) { 
-			@content; 
+		@media all and (min-width: 600px) {
+			@content;
 		}
 	}
 }

@@ -26,13 +26,13 @@
 					<div class="copyright">
 						<p>Copyright  <i class="fa fa-copyright"></i> <?php echo date("Y"); ?></p>
 					</div>
-					
+
 				</div>
 
 			</div>
 
 		</div>
-		
+
 	</footer>
 
 	<?php // Wordpress Footer ?>

@@ -13,14 +13,17 @@ a {
 	// &:visited {
 	// 	color: $brand-primary-accent;
 	// }
+
 	&:hover,
 	&:focus,
 	&:active {
 		color: $brand-primary;
 	}
+
 	&:focus {
 		outline: thin dotted;
 	}
+
 	&:hover,
 	&:active {
 		outline: 0;
