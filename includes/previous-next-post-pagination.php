@@ -28,7 +28,7 @@ function prev_next_post_pagination() {
 
 		// Stop execution if there's only 1 post
 		if( get_previous_post() || get_next_post() ) {
-			
+
 			echo '<nav class="prev-next-post-pagination" role="navigation">' . "\n";
 
 				printf( previous_post_link( '%link', '%title' ) );
