@@ -5,14 +5,18 @@
 # Pages - Author
 ------------------------------------------------------------------------------*/
 
-.author-profile{
+.author-header{
 	margin-bottom: 3.5rem;
 	padding: 1.75rem;
 	background-color: $brand-tertiary;
 	@include border-radius(2px);
+
+	@include breakpoint(alpha) {
+		padding: 3.5rem;
+	}
 }
 
-.author-data{
+.author-profile{
 	position: relative;
 	width: 100%;
 

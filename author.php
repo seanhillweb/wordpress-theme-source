@@ -10,9 +10,9 @@
 
 					<?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
 
-					<header class="author-profile">
+					<header class="author-header">
 
-						<div class="author-data">
+						<div class="author-profile">
 
 							<div class="author-image">
 								<?php echo get_avatar($curauth->user_email, 73); ?>
