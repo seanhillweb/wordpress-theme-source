@@ -1,4 +1,3 @@
-# wordpress-theme-source
+# Wordpress Theme - Source
 
-## An Introduction
-This is a personal reset Wordpress theme that I developed for work and projects.
+Hey there, you've found my personal project. This is a reset Wordpress theme that I have developed for personal projects.
