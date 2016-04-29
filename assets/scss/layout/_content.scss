@@ -99,7 +99,9 @@
 }
 
 .post-header{
-
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
 .post-title{
@@ -187,12 +189,13 @@
 }
 
 .post-footer{
-
+	position: relative;
+	width: 100%;
+	height: auto;
 }
 
 .post-tags{
 	width: 100%;
-	margin-top: 3.5rem;
 	padding-top: 1.75rem;
 	border-top: 3px solid $greyscale-2;
 
