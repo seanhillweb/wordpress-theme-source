@@ -1,3 +1,15 @@
 # Wordpress Theme - Source
 
-Hey there, you've found my personal project. This is a reset Wordpress theme that I have developed to my coding style and naming conventions.
+Source is a starter Wordpress theme developed to quickly reiterate sites based on personal coding styles and naming conventions.
+
+Designed and developed by myself, Sean Hill.
+
+### What this theme is:
+
+### What this theme isn't:
+
+### Who this theme is for:
+
+### How to use this theme:
+
+## Helpful Links:
