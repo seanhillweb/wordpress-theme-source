@@ -236,6 +236,9 @@ add_filter( 'the_content', 'remove_img_ptags' );
 // Includes
 // =============================================================================
 
+// Custom Post Types
+require get_template_directory() . '/includes/custom-post-types.php';
+
 // Numberic Pagination
 require get_template_directory() . '/includes/numeric-pagination.php';
 
