@@ -125,6 +125,49 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 
 // =============================================================================
+// Register Theme Support
+// =============================================================================
+
+function register_theme_support() {
+
+	// Wordpress Thumbnails
+	add_theme_support( 'post-thumbnails' );
+
+	// Default Thumbnail Size
+	set_post_thumbnail_size(125, 125, true);
+
+	// Additional Thumbnail Sizes
+	add_image_size( 'post-thumbnail-preview', 760, 428, true );
+	add_image_size( 'post-thumbnail-feature', 1280, 720, true );
+	add_image_size( 'post-thumbnail-banner', 1920, 1080, true );
+
+	// Post Formats
+	add_theme_support( 'post-formats', array(
+		'aside',
+		'audio',
+		'chat',
+		'gallery',
+		'image',
+		'link',
+		'quote',
+		'status',
+		'video'
+	));
+
+	// Enable support for HTML5 markup
+	add_theme_support( 'html5', array(
+		'comment-list',
+		'comment-form',
+		'search-form',
+		'gallery',
+		'caption'
+	));
+}
+
+add_action( 'after_setup_theme', 'register_theme_support' );
+
+
+// =============================================================================
 // Register Navigation
 // =============================================================================
 
@@ -175,49 +218,6 @@ function register_custom_sidebars() {
 }
 
 add_action( 'widgets_init', 'register_custom_sidebars' );
-
-
-// =============================================================================
-// Register Theme Support
-// =============================================================================
-
-function register_theme_support() {
-
-	// Wordpress Thumbnails
-	add_theme_support( 'post-thumbnails' );
-
-	// Default Thumbnail Size
-	set_post_thumbnail_size(125, 125, true);
-
-	// Additional Thumbnail Sizes
-	add_image_size( 'post-thumbnail-preview', 760, 428, true );
-	add_image_size( 'post-thumbnail-feature', 1280, 720, true );
-	add_image_size( 'post-thumbnail-banner', 1920, 1080, true );
-
-	// Post Formats
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'audio',
-		'chat',
-		'gallery',
-		'image',
-		'link',
-		'quote',
-		'status',
-		'video'
-	));
-
-	// Enable support for HTML5 markup
-	add_theme_support( 'html5', array(
-		'comment-list',
-		'comment-form',
-		'search-form',
-		'gallery',
-		'caption'
-	));
-}
-
-add_action( 'after_setup_theme', 'register_theme_support' );
 
 
 // =============================================================================
