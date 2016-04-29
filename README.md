@@ -4,7 +4,7 @@ Source is a starter Wordpress theme developed to quickly reiterate sites based o
 
 Designed and developed by myself, Sean Hill.
 
-### What this theme is:
+#### What this theme is:
 
 ### What this theme isn't:
 
