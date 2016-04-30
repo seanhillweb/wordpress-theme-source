@@ -128,7 +128,7 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 // Register Theme Support
 // =============================================================================
 
-function register_theme_support() {
+function theme_register_support() {
 
 	// Wordpress Thumbnails
 	add_theme_support( 'post-thumbnails' );
@@ -164,7 +164,7 @@ function register_theme_support() {
 	));
 }
 
-add_action( 'after_setup_theme', 'register_theme_support' );
+add_action( 'after_setup_theme', 'theme_register_support' );
 
 
 // =============================================================================
@@ -172,14 +172,14 @@ add_action( 'after_setup_theme', 'register_theme_support' );
 // =============================================================================
 
 // Single
-function register_custom_menu() {
+function theme_register_menu() {
 	register_nav_menu('primary-navigation',__( 'Primary Navigation' ));
 }
 
-add_action( 'init', 'register_custom_menu' );
+add_action( 'init', 'theme_register_menu' );
 
 // Multiple
-// function register_custom_menus() {
+// function theme_register_menus() {
 // register_nav_menus(
 // array(
 // 'primary-navigation' => __( 'Primary Navigation' ),
@@ -188,14 +188,14 @@ add_action( 'init', 'register_custom_menu' );
 // );
 // }
 //
-// add_action( 'init', 'register_custom_menus' );
+// add_action( 'init', 'theme_register_menus' );
 
 
 // =============================================================================
 // Register Sidebar
 // =============================================================================
 
-function register_custom_sidebars() {
+function theme_register_sidebars() {
 	register_sidebar(array(
 		'id'			=>	'primary-sidebar',
 		'name'			=>	__( 'Primary Sidebar'),
@@ -217,7 +217,7 @@ function register_custom_sidebars() {
 	// ));
 }
 
-add_action( 'widgets_init', 'register_custom_sidebars' );
+add_action( 'widgets_init', 'theme_register_sidebars' );
 
 
 // =============================================================================
