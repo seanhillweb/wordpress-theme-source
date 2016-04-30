@@ -12,9 +12,9 @@ Designed and developed by myself, Sean Hill.
 
 #### What this theme isn't:
 
-A full-fledged - to spec - Premium Wordpress theme.
+Perfect.
 
-I have not, and may not, add all of the Wordpress standards to this theme. I have cherry-picked the codes and layouts that I have found useful in my time developing sites.
+I have not, and may not, add all of the Wordpress standards to this theme. I have hand-picked the code and layouts that I have found useful in my time developing sites.
 
 #### Who this theme is for:
 
