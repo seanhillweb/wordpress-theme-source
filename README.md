@@ -18,11 +18,23 @@ I have not, and may not, add all of the Wordpress standards to this theme. I hav
 
 #### Who this theme is for:
 
+I'm not exactly sure. Myself?
+
+However, I've decided to put this out there for anyone who may think this can work for their needs. Even if it's just a snippet of code, a page template, or a functions reference - I would like to be able to help.
+
 #### How to use this theme:
+
+Styling this theme is easy, once you have the necessary dependicies.
+
+1. [Install RVM](https://rvm.io/rvm/install), which is an abbreviation for "Ruby Version Manager," to your machine.
+
+2. [Install Compass](http://compass-style.org/install/)
 
 ## Helpful Links:
 
 [Download Wordpress](https://wordpress.org/download/)
+
+[Install MAMP](https://www.mamp.info/en/downloads/)
 
 [Install RVM](https://rvm.io/rvm/install)
 
