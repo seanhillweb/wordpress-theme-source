@@ -39,3 +39,5 @@ Styling this theme is easy, once you have the necessary dependicies.
 [Install RVM](https://rvm.io/rvm/install)
 
 [Install Compass](http://compass-style.org/install/)
+
+[Learn Sass](http://sass-lang.com/guide)
