@@ -30,6 +30,8 @@ Styling this theme is easy, once you have the necessary dependicies.
 
 2. [Install Compass](http://compass-style.org/install/)
 
+3. In the theme directory, navigate to the assets folder (/source/assets/), there you will find the ```config.rb``` file.
+
 ## Helpful Links:
 
 [Download Wordpress](https://wordpress.org/download/)
