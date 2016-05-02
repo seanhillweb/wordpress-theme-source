@@ -6,7 +6,7 @@ Source is a starter Wordpress theme developed to quickly reiterate sites based o
 
 HTML5, CSS3, Sass, Compass, and PHP are the primary technologies used.
 
-Sass is used as our styling preprocessor, and Compass is used to watch the changes in terminal. Check out the "How to use this theme" section for more details.
+Sass is used as our styling preprocessor, and Compass is used to watch the changes in terminal. Check out the "How to modify this theme" section for more details.
 
 Designed and developed by myself, Sean Hill.
 
@@ -22,7 +22,7 @@ I'm not exactly sure. Myself?
 
 However, I've decided to put this out there for anyone who may think this can work for their needs. Even if it's just a snippet of code, a page template, or a functions reference - I would like to be able to help.
 
-#### How to use this theme:
+#### How to modify this theme:
 
 Styling this theme is easy, once you have the necessary dependicies.
 
