@@ -28,7 +28,7 @@ Styling this theme is easy, once you have the necessary dependicies.
 
 1. [Install RVM](https://rvm.io/rvm/install), which is an abbreviation for "Ruby Version Manager," to your machine.
 
-2. [Install Compass](http://compass-style.org/install/)
+2. [Install Compass](http://compass-style.org/install/), we will use this to monitor our CSS changes.
 
 3. Using terminal (or something similar) navigate to the theme directory and then the assets folder ```/source/assets/```, there you will find the ```config.rb``` file. Execute this command in your terminal to start watching for changes: ```compass watch```.
 
