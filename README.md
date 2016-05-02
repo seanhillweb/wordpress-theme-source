@@ -30,7 +30,7 @@ Styling this theme is easy, once you have the necessary dependicies.
 
 2. [Install Compass](http://compass-style.org/install/)
 
-3. In the theme directory, navigate to the assets folder ```/source/assets/```, there you will find the ```config.rb``` file. Execute this command in your terminal to start watching for changes: ```compass watch```.
+3. Using terminal (or something similar) navigate to the theme directory and then the assets folder ```/source/assets/```, there you will find the ```config.rb``` file. Execute this command in your terminal to start watching for changes: ```compass watch```.
 
 4. Start styling! Make sure you know [Sass](http://sass-lang.com/guide).
 
