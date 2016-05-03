@@ -34,7 +34,7 @@
 
 			</div>
 
-			<h1 class="post-title"><?php the_title(); ?></h1>
+			<h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 			<div class="post-excerpt"><?php the_excerpt(); ?></div>
 
