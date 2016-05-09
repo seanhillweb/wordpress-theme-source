@@ -48,7 +48,18 @@ function theme_custom_post_type() {
 			'hierarchical' 			=> false,
 
 			// Enable post editor support
-			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky')
+			'supports' => array(
+				'title',
+				'editor',
+				'author',
+				'thumbnail',
+				'excerpt',
+				'trackbacks',
+				'custom-fields',
+				'comments',
+				'revisions',
+				'sticky'
+			)
 		)
 	);
 
